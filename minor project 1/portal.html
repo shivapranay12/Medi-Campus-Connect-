@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+    <title>Portal</title>
+</head>
+<body>
+    <section class="main">
+       <a href="index.html" style="color:green; " ><h1>BVRIT Hospital</h1> </a>
+        <div class="box">
+            <div class="topbar">
+                <div class="mockapitext">
+                    Patients Record
+                </div>
+                <div class="adduserbtn">
+                    <img width="70%" height="70%" src="https://img.icons8.com/ios-filled/50/add-user-male.png" alt="add-user-male"/>
+                </div>
+            </div>
+            <section class="enterdata">
+                <label>Enter Patient details</label>
+                <form>
+                    <input type="text" name="StudentRollNo" placeholder="Enter Student Roll No">
+                    <input type="text" name="StudentName" placeholder="Enter Student Name">
+                    <select id="branch" required name="Branch">
+                        <option value="Branch">Branch</option>
+                        <option value="CSE">CSE</option>
+                        <option value="ECE">ECE</option>
+                        <option value="CIVIL">CIVIL</option>
+                        <option value="MECH">MECH</option>
+                        <option value="IT">IT</option>
+                        <option value="CSBS">CSBS</option>
+                        <option value="AIDS">AIDS</option>
+                        <option value="CSM">CSM</option>
+                        <option value="CSD">CSD</option>
+                        <option value="BME">BME</option>
+                        <option value="PHE">PHE</option>
+                    </select>
+                    <input type="text" name="HealthIssue" placeholder="Enter Health Issue">
+                    <select id="hostelDay" required name="HostelDay">
+                  
+                        <option value="Hosteller">Hosteller</option>
+                        <option value="DayScholar">Day Scholar</option>
+                    </select>
+                    <input type="submit" value="Enter Data">
+                </form>
+            </section>
+            <div class="userinfo">
+                <div class="heading">
+                    <div class="date">Date</div>
+                    <div class="id">Roll No</div>
+                    <div class="name">Student Name</div>
+                    <div class="branch">Branch</div>
+                    <div class="comment">Health Issue</div>
+                    <div class="hostelDay">Hosteller/Day Scholar</div>
+                    <div class="functions">Functions</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyCGeQi0bZ2S28fyLWp0IVXWt_Q2tPM8Tts",
+          authDomain: "hospital-login-authentication.firebaseapp.com",
+          databaseURL: "https://hospital-login-authentication-default-rtdb.firebaseio.com",
+          projectId: "hospital-login-authentication",
+          storageBucket: "hospital-login-authentication.appspot.com",
+          messagingSenderId: "843551032648",
+          appId: "1:843551032648:web:a7b3bffd59d93e70519f7d",
+          measurementId: "G-2ZP9FHRKK8"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</body>
+</html>

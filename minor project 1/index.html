@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>BVRITN</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&dispaly=swap" rel = "stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+    
+<header>
+    <nav class="navbar" >
+    </div> <div class="Logo"><img src="https://bvrit.ac.in/wp-content/uploads/2023/04/BVRIT-engineering-technology-college-logo-narsapur-3.png" ></div>
+      
+        <ul>
+            <li class="hide" onclick="hideBar(event, '#home')">
+                <a href="#">Home</a>
+            </li>
+            <li class="hide" onclick="hideBar(event, '#Doctorsstaff')">
+                <a href="#">Doctors & Staff</a>
+            </li>
+            <li class="hide" >
+                <a href="login.html">Staff Login</a>
+            </li>
+            <li class="hide" onclick="hideBar(event, '#ending')">
+                <a href="#">Health Guide</a>
+            </li>
+            <li class="hide" onclick="hideBar(event, '#Facilities')">
+                <a href="#">Facilities</a>
+            </li>
+            <li class="menu" onclick="showSidebar()">
+                <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="25px" height="25px">
+                    <path d="M0 7.5L0 12.5L50 12.5L50 7.5ZM0 22.5L0 27.5L50 27.5L50 22.5ZM0 37.5L0 42.5L50 42.5L50 37.5Z"></path>
+                </svg>
+            </li>
+        </ul>
+        <ul class="sidebar">
+            <li onclick="hideBar(event)">
+                <a href="#">
+                    <svg fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="26px" height="26px">
+                        <path d="M7 4C6.744125 4 6.4879687 4.0974687 6.2929688 4.2929688L4.2929688 6.2929688C3.9019687 6.6839688 3.9019687 7.3170313 4.2929688 7.7070312L11.585938 15L4.2929688 22.292969C3.9019687 22.683969 3.9019687 23.317031 4.2929688 23.707031L6.2929688 25.707031C6.6839688 26.098031 7.3170313 26.098031 7.7070312 25.707031L15 18.414062L22.292969 25.707031C22.682969 26.098031 23.317031 26.098031 23.707031 25.707031L25.707031 23.707031C26.098031 23.316031 26.098031 22.682969 25.707031 22.292969L18.414062 15L25.707031 7.7070312C26.098031 7.3170312 26.098031 6.6829688 25.707031 6.2929688L23.707031 4.2929688C23.316031 3.9019687 22.682969 3.9019687 22.292969 4.2929688L15 11.585938L7.7070312 4.2929688C7.5115312 4.0974687 7.255875 4 7 4z"></path>
+                    </svg>
+                </a>
+            </li>
+            <li onclick="hideBar(event, '#home')">
+                <a href="#">Home</a>
+            </li>
+            <li onclick="hideBar(event, '#Doctorsstaff')">
+                <a href="#">Doctors & Staff</a>
+            </li>
+            <li>
+                <a href="login.html">Staff Login</a>
+            </li>
+            <li onclick="hideBar(event, '#ending')">
+                <a href="#">Health Guide</a>
+            </li>
+            <li onclick="hideBar(event, '#Facilities')">
+                <a href="#">Facilities</a>
+            </li>
+           
+        </ul>
+    </nav>
+</header>
+<script>
+
+
+function showSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'flex';
+}
+
+function hideBar(event, sectionId) {
+    event.preventDefault();
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'none';
+    
+    // Scroll to the selected section
+    const section = document.querySelector(sectionId);
+    section.scrollIntoView({ behavior: 'smooth' });
+}
+
+
+
+//navigation bar menu bar
+</script>
+
+
+    <main id="home">
+        <section id="indexhtml">
+            <div class="img">
+                 <div class="heading"><h1 style="text-align: left;">BVRIT HEALTH CENTER, <br>NARSAPUR</h1>
+                    </div>
+            </div>
+   
+
+   
+   
+
+ 
+    <p class="main">"Centennial Health Centre" is a 20-bedded Hospital on campus. It caters to the health requirements of students, faculty, and residents of the campus. It also consists of a fully equipped dental facility and a pharmacy. The health centre provides its own ambulance service and offers round-the-clock healthcare facilities on campus.
+    </p>
+    <div class="vision">
+    <h1 style="text-decoration: underline">Vision</h1>
+    <p>"To be the primary choice of Healthcare for our community, setting the standard for excellence in student-centered care, innovation, and community engagement. We aspire to create a dynamic healthcare environment that not only addresses the immediate health needs of our students but also empowers them to lead healthy, fulfilling lives through education, prevention, and compassionate support."
+</div>
+
+
+
+<div class="mission">
+    <h1 style="text-decoration: underline">Mission</h1>
+   <p>"To be a provider of high-quality, patient-focused healthcare that is readily accessible, cost-effective, and meets the diverse needs of our community. We are committed to delivering compassionate care that not only treats illness but also promotes wellness and empowers individuals to actively participate in their health journey. Through continuous innovation, collaboration, and a dedication to excellence, we strive to exceed expectations and improve the overall well-being of our community."</p>
+
+</div> 
+
+</section>
+<section id="Doctorsstaff">
+    <div class="dt">
+        <h1>Meet Our Certified & Experienced Doctors</h1>
+    </div>
+
+    <div class="docleft">
+        <div class="doctor">
+            <img src="maledoctor.png" alt="Dr. G V K Sujan">
+            <h2>Dr. G V K Sujan, MBBS</h2>
+        </div>
+        <div class="doctor">
+            <img src="FDoc1.jpg" alt="Dr. V. Mahalakshmi">
+            <h2>Dr. V. Mahalakshmi, MDS</h2>
+        </div>
+    </div>
+
+    <div class="ns">
+        <h1>Nursing Staff</h1>
+    </div>
+
+    <div class="nursing-staff">
+        <div class="nurse">
+            <img src="nurses.png" height="512" alt="T. Mangala Mary">
+            <h2>T. Mangala Mary, GNM, ICU</h2>
+        </div>
+        <div class="nurse">
+            <img src="nurses.png" height="512" alt="B. Sujatha">
+            <h2>B. Sujatha, ANM</h2>
+        </div>
+        <div class="nurse">
+            <img src="nurses.png" height="512" alt="B. Srilatha">
+            <h2>B. Srilatha, B.Sc (Nursing)</h2>
+        </div>
+    </div>
+</section>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section id="Facilities">
+        <div class="facilities">
+            <br><br>
+            <div class="firstimg">
+                <div class="facility">
+                    <img src="casualty.jpg" alt="Casualty">
+                    <button type="button">Casualty</button>
+                </div>
+                <div class="facility">
+                    <img src="maleward.jpg" alt="Male Ward">
+                    <button type="button">Male Ward</button>
+                </div>
+                <div class="facility">
+                    <img src="femaleward.jpg" alt="Female Ward">
+                    <button type="button">Female Ward</button>
+                </div>
+            </div>
+            <br><br><br>
+            <div class="secondimgs">
+                <div class="facility">
+                    <img src="xray.jpg" alt="X-Ray Machine" height="278">
+                    <button type="button">X-Ray Machine</button>
+                </div>
+                <div class="facility">
+                    <img src="needle.jpg" alt="Needle Destroyer" height="278">
+                    <button type="button">Needle Destroyer</button>
+                </div>
+                <div class="facility">
+                    <img src="oxygen.jpg" alt="Oxygen Cylinders" height="278">
+                    <button type="button">Oxygen Cylinders</button>
+                </div>
+            </div>
+            <br><br><br>
+            <div class="thirdimgs">
+                <div class="facility">
+                    <img src="distiller.jpg" alt="Distiller" height="278">
+                    <button type="button">Distiller</button>
+                </div>
+                <div class="facility">
+                    <img src="scanner.jpg" alt="X-Ray Scanner & Printer" height="278">
+                    <button type="button">X-Ray Scanner & Printer</button>
+                </div>
+            </div>
+            <br><br><br>
+            <div class="fourthimgs">
+                <div class="facility">
+                    <img src="dental1.jpg" alt="Dental Equipment-1" height="441">
+                    <button type="button">Dental Equipment-1</button>
+                </div>
+                <div class="facility">
+                    <img src="dental2.jpg" alt="Dental Equipment-2" height="441">
+                    <button type="button">Dental Equipment-2</button>
+                </div>
+                <div class="facility">
+                    <img src="ambulance.jpg" alt="Ambulance" height="441">
+                    <button type="button">Ambulance</button>
+                </div>
+            </div>
+            <br><br><br>
+        </div>
+    </section>
+    
+    
+
+</main>
+
+
+<div id="ending" class="ending">
+    <div class="issues" > <h1><b>What are you suffering from?</b></h1>
+    </div>
+
+    <select class="select" name="diseases" id="diseases">
+    <option value="" disabled selected>Choose</option>
+    <option value="fever">fever</option>
+    <option value="Cold">Cold</option>
+    <option value="Cough">Cough</option>
+    <option value="Back pain">Back Pain</option>
+    <option value="food poison">food poison</option>
+    <option value="skininfections">Skin Infections</option>
+    <option value="Mental Health Issues">Mental Health</option>
+   
+
+
+
+   </select>
+</div>
+<div class="parent">
+
+
+    
+<div id="fever" class="description">
+    <div class="common"> <buton type="button">Common Symptoms</buton></div>
+    <ul>
+        <li>Elevated body temperature</li>
+        <li>Sweating</li>
+        <li>Chills and shivering</li>
+        <li>Headache</li>
+        <li>Muscle aches</li>
+    </ul>
+    <div class="sevier">
+        <div class="H1">
+            <h2><b>Sevier Symptoms</b></h2>
+        </div>
+        <p>Emergency symptoms that warrant contacting a doctor include:</p>
+        <ul>
+            <li>Fever exceeding 103°F (39.4°C)</li>
+            <li>Difficulty breathing or shortness of breath</li>
+            <li>Chest pain</li>
+            <li>Persistent vomiting</li>
+            <li>Severe headache or stiff neck</li>
+        </ul>
+        <p>If any of these symptoms occur,contact doctor immediately</p>
+    </div>
+    <div class="common"> <buton type="button">Diet</buton></div>
+
+    <ul>
+        <li> Eat light, nutritious foods that are easy to digest, such as fruits, vegetables, soups, and broths. Avoid heavy, greasy foods that can be hard to digest.</li>
+    </ul>
+        <div class="common"> <buton type="button">Precautions</buton></div>
+        <ul>
+            <li>Elevated body temperature : Stay hydrated, dress lightly, and use fans or AC.</li>
+            <li>Sweating : Wear loose clothing, avoid hot environments, and use antiperspirants.</li>
+            <li>Chills and shivering : Keep warm with blankets, drink warm beverages, and use heating pads</li>
+            <li>Headache : Rest in a quiet place, apply cold compresses, and practice relaxation techniques.</li>
+            <li>Muscle aches : Avoid strenuous activity, use heat packs, and try gentle stretching.</li>
+        </ul> 
+</div>
+<!-- To replace the food poisoning content with information about the common cold while keeping the class names and structure unchanged, you can use the following code:
+
+```html -->
+<div id="Cold" class="description">
+    <div class="common">Common Symptoms</div>
+    <ul>
+        <li>Runny or stuffy nose</li>
+        <li>Sore throat</li>
+        <li>Cough</li>
+        <li>Congestion</li>
+        <li>Sneezing</li>
+        <li>Body aches or mild headache</li>
+        <li>Low-grade fever</li>
+      
+    </ul>
+    <div class="sevier">
+        <div class="H1">
+            <h2><b>Severe Symptoms</b></h2>
+        </div>
+        <p>
+            Apologies for the oversight. Here are five emergency symptoms of a cold that warrant contacting a doctor:
+            Severe dehydration
+        </p>
+        <ul>
+            <li>High fever (above 103°F or 39.4°C)</li>
+            <li>Severe dehydration</li>
+            <li>Chest pain or difficulty breathing</li>
+            <li>Persistent high fever</li>
+            <li>Signs of neurological issues, such as confusion or seizures</li>
+        </ul>
+        
+    </div>
+    <div class="common">Diet</div>
+
+    <ul>
+        <li>Stay hydrated by drinking plenty of fluids such as water, herbal  tea, and broths. Eat light, nutritious foods like fruits, vegetables, and chicken soup.To soothe a sore throat, try warm beverages with honey and lemon, and stay away from caffeine and alcohol. </li>
+    </ul>
+        <div class="common">Precautions</div>
+        <ul>
+            <li>Elevated body temperature: Stay hydrated, dress lightly, and use fans or AC.</li>
+            <li>Chills and shivering: Keep warm with blankets, drink warm beverages, and use heating pads</li>
+            <li>Headache: Rest in a quiet place, apply cold compresses, and practice relaxation techniques.</li>
+        </ul> 
+    </div>
+   /
+<div id="Cough" class="description">
+    <div class="common">Common Symptoms</div>
+    <ul>
+        <li>Dry cough</li>
+        <li>Wet cough with mucus</li>
+        <li>Sore throat</li>
+        <li>Hoarseness</li>
+        <li>Chest discomfort</li>
+        <li>Fatigue</li>
+    </ul>
+    <div class="sevier">
+        <div class="H1">
+            <h2><b>Severe Symptoms</b></h2>
+        </div>
+        <p>
+            Apologies for the oversight. Here are five emergency symptoms of a cough that warrant contacting a doctor:
+        </p>
+        <ul>
+            <li>High fever (above 103°F or 39.4°C)</li>
+            <li>Severe dehydration</li>
+            <li>Blood in mucus or sputum</li>
+            <li>Difficulty breathing or shortness of breath</li>
+            <li>Persistent or worsening cough lasting more than three weeks</li>
+        </ul>
+        
+    </div>
+    <div class="common">Diet</div>
+
+    <ul>
+        <li>Drink plenty of fluids such as water, herbal tea, and broths to stay hydrated and soothe the throat. Eat light, nutritious foods like fruits, vegetables, and soups. Honey and warm beverages can help soothe a sore throat and reduce coughing, and stay away from caffeine and alcohol.</li>
+    </ul>
+        <div class="common">Precautions</div>
+        <ul>
+            <li>Elevated body temperature: Stay hydrated, dress lightly, and use fans or AC.</li>
+            <li>Sweating: Wear loose clothing, avoid hot environments, and use antiperspirants.</li>
+            <li>Chills and shivering: Keep warm with blankets, drink warm beverages, and use heating pads</li>
+            <li>Headache: Rest in a quiet place, apply cold compresses, and practice relaxation techniques.</li>
+        </ul> 
+    </div>
+
+
+<!-- This code replaces the content with information about cough, including common symptoms, severe symptoms, dietary guidelines, and precautions, while maintaining the original class names and HTML structure. -->
+<!-- 
+Sure, here is the updated code with information about back pain, including changes in the precautions section:
+
+```html -->
+<div id="Back pain" class="description">
+    <div class="common">Common Symptoms</div>
+    <ul>
+        <li>Dull, aching pain in the lower back</li>
+        <li>Sharp, shooting pain that radiates down the leg (sciatica)</li>
+        <li>Muscle stiffness and tightness in the lower back</li>
+        <li>Limited range of motion</li>
+        <li>Pain that worsens with movement or prolonged sitting</li>
+    </ul>
+    <div class="sevier">
+        <div class="H1">
+            <h2><b>Severe Symptoms</b></h2>
+        </div>
+        <p>
+            Apologies for the oversight. Here are five emergency symptoms of back pain that warrant contacting a doctor:
+        </p>
+        <ul>
+            <li>Severe pain that does not improve with rest</li>
+            <li>Loss of bowel or bladder control</li>
+            <li>Weakness, numbness, or tingling in the legs</li>
+            <li>Unexplained weight loss</li>
+            <li>Fever accompanying back pain</li>
+        </ul>
+        
+    </div>
+    <div class="common">Diet</div>
+
+    <ul>
+        <li>For back pain, follow these dietary guidelines: Maintain a balanced diet rich in anti-inflammatory foods such as fruits, vegetables, whole grains, and lean proteins. Stay hydrated by drinking plenty of water. Avoid processed foods, sugary drinks, and excessive caffeine. Omega-3 fatty acids found in fish and flaxseed can help reduce inflammation. These tips can help manage symptoms and support recovery.</li>
+    </ul>
+        <div class="common">Precautions</div>
+        <ul>
+            <li>Avoid heavy lifting: Use proper lifting techniques or seek assistance.</li>
+            <li>Maintain good posture: Sit and stand with a straight back and shoulders.</li>
+            <li>Regular exercise: Engage in low-impact activities like walking or swimming to strengthen back muscles.</li>
+            <li>Use ergonomic furniture: Ensure your workspace supports good posture and reduces strain on your back.</li>
+        </ul> 
+    </div>
+
+
+<!-- This code replaces the content with information about back pain, including common symptoms, severe symptoms, dietary guidelines, and updated precautions, while maintaining the original class names and HTML structure. -->
+
+
+<div id="food poison" class="description">
+    <div class="common">Common Symptoms</div>
+    <ul>
+        <li>Nausea</li>
+        <li>Vomting</li>
+        <li>Diarrhea</li>
+        <li>Abdominal pain and or cramps</li>
+        <li>Fever</li>
+    </ul>
+    <div class="sevier">
+        <div class="H1">
+            <h2><b>Sevier Symptoms</b></h2>
+        </div>
+        <p>
+            Apologies for the oversight. Here are five emergency symptoms of food poisoning that warrant contacting a doctor:
+            Severe dehydration
+        </p>
+        <ul>
+            <li>High Fever</li>
+            <li>severe dehydration</li>
+            <li>Blood in vomit or stools</li>
+            <li>Persistent vomiting</li>
+            <li>signs of neurologica issues</li>
+        </ul>
+        
+    </div>
+    <div class="common">Diet</div>
+
+    <ul>
+        <li>For nausea, eat small, bland meals like crackers and sip ginger tea. With vomiting, start with clear liquids, then try bananas, rice, applesauce, and toast (BRAT diet). For diarrhea, stay hydrated and eat binding foods like bananas and rice. To ease abdominal pain, eat easily digestible foods like mashed potatoes and avoid spicy or fatty foods. For fever, drink plenty of fluids and eat light, nutritious foods like fruits and vegetables.</li>
+    </ul>
+    <div class="common">
+       Precautions</div>
+    
+    <ul>
+        <li>Nausea and Vomiting: Sip clear fluids, avoid solid foods until vomiting stops, and try ginger tea or crackers.</li>
+        <li>Diarrhea: Stay hydrated with electrolyte solutions, avoid dairy and fatty foods, and eat bland foods like bananas, rice, applesauce, and toast.</li>
+        <li>Abdominal Pain: Apply a warm compress to your stomach, avoid spicy foods, and eat small, frequent meals.</li>
+       
+    </ul>
+</div>
+
+
+<div id="skininfections" class="description">
+    <div class="common">Common Symptoms</div>
+    <ul>
+        <li>Redness</li>
+        <li>Swelling</li>
+        <li>Warmth in the affected area</li>
+        <li>Pain or tenderness</li>
+        <li>Pus or discharge</li>
+    </ul>
+    <div class="sevier">
+        <div class="H1">
+            <h2><b>Severe Symptoms</b></h2>
+        </div>
+        <p>
+            Apologies for the oversight. Here are five emergency symptoms of skin infections that warrant contacting a doctor:
+            Severe spreading of redness or swelling
+        </p>
+        <ul>
+            <li>High Fever</li>
+            <li>Severe pain or swelling</li>
+            <li>Red streaks leading away from the infection</li>
+            <li>Persistent pus or discharge</li>
+            <li>Signs of systemic infection like chills or fatigue</li>
+        </ul>
+    </div>
+    <div class="common">Diet</div>
+    <ul>
+        <li>For promoting healing, eat a diet rich in vitamins and minerals. Include foods high in Vitamin C (citrus fruits, berries), zinc (nuts, seeds), and protein (lean meats, legumes) to support tissue repair. Stay hydrated by drinking plenty of water and avoid excessive sugar or processed foods.</li>
+    </ul>
+    <div class="common">
+        Precautions
+    </div>
+    <ul>
+        <li>Redness and Swelling: Keep the area clean and dry, apply a cool compress to reduce swelling, and elevate the affected area if possible.</li>
+        <li>Warmth and Pain: Use over-the-counter pain relief medications as needed, and apply an antibiotic ointment if recommended by a healthcare provider.</li>
+        <li>Pus or Discharge: Avoid squeezing or picking at the infected area, cover it with a clean bandage, and seek medical advice if it persists or worsens.</li>
+    </ul>
+</div>
+
+<div class="space" "></div>
+<footer>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d901.3503362774313!2d78.25710880198002!3d17.726882267027747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sbvrit%20map!5e1!3m2!1sen!2sin!4v1715886104266!5m2!1sen!2sin" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <br>
+   
+    <div class="tagline">
+        <h1>"Navigate Your Way to Wellness: Discover Our College Hospital"</h1>
+    </div>
+</footer>
+
+
+
+<script>
+  document.querySelector('#diseases').addEventListener('change', function() {
+    // Hide all descriptions
+    const description = document.querySelectorAll('.description');
+     description.forEach(description => {
+        description.style.display = 'none';
+    });
+    
+    // Get the selected value
+    document.querySelector(".space").style.height ='550px';
+    const selectedValue = this.value;
+
+    // Show the corresponding description
+    if (selectedValue) {
+        document.getElementById(selectedValue).style.display = 'block';
+    }
+
+    // Show the corresponding description
+  
+});
+
+
+</script>
+<script src="//code.tidio.co/ic1nl5ovlv3wt7g8g9u4tftpudbgdbl6.js" async></script>
+</body>
+</html>

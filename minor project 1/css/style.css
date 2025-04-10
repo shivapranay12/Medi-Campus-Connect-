@@ -1,0 +1,250 @@
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 1.3vw;
+}
+
+.main {
+    width: 90%;
+    height: auto;
+    background-color: white;
+}
+
+.main h1 {
+    text-align: left;
+}
+
+.box {
+    width: 100%;
+}
+
+.box .topbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(167, 167, 167, 0.203);
+    padding: 10px;
+}
+
+.box .userinfo {
+    width: 100%;
+    padding: 10px;
+    display: block;
+}
+
+.box .userinfo .heading {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px rgb(233, 233, 233) solid;
+    border-top: 1px rgb(233, 233, 233) solid;
+    font-weight: 600;
+}
+
+.box .userinfo .id,
+.box .userinfo .name,
+.box .userinfo .branch,
+.box .userinfo .comment,
+.box .userinfo .hostelDay,
+.box .userinfo .date,
+.box .userinfo .functions {
+    text-align: left;
+    padding: 10px;
+}
+
+.id {
+    width: 10%;
+}
+
+.name {
+    width: 20%;
+}
+
+.branch {
+    width: 10%;
+}
+
+.comment {
+    width: 30%;
+}
+
+.hostelDay {
+    width: 15%;
+}
+
+.functions {
+    width: 15%;
+    padding: 10px;
+}
+
+.date, .name, .comment, .functions {
+    background-color: rgb(242, 242, 242);
+}
+
+.userdataa {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px rgb(233, 233, 233) solid;
+    height: 80px;
+    display: none;
+}
+
+.userdata {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px rgb(233, 233, 233) solid;
+    height: 80px;
+}
+
+.functions .btns {
+    display: flex;
+    height: 100%;
+}
+
+.functions .btns .edit, .dlt, .save {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.functions .btns .edit {
+    background-color: rgb(83, 214, 196);
+    border-radius: 5px 0 0 5px;
+}
+
+.functions .btns .save {
+    background-color: rgb(83, 87, 214);
+    border-radius: 0 5px 5px 0;
+    color: white;
+}
+
+.functions .btns .dlt {
+    background-color: rgb(240, 75, 75);
+    border-radius: 0 5px 5px 0;
+}
+
+.functions .btns .dlt:hover {
+    background-color: rgb(163, 44, 44);
+}
+
+.functions .btns .edit:hover {
+    background-color: rgb(64, 167, 153);
+}
+
+.enterdata {
+    width: 100%;
+    padding: 50px;
+    display: none;
+}
+
+input, select {
+    width: 50%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    height: 30px;
+}
+
+input[type="submit"] {
+    background-color: rgb(86, 86, 205);
+    color: white;
+    border-radius: 5px;
+}
+
+.dltpopup {
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border: 1px rgba(101, 101, 101, 0.623) solid;
+    border-radius: 5px;
+    position: fixed;
+    left: 35%;
+    top: 20%;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0px 5px 10px rgba(110, 110, 110, 0.447);
+}
+
+.dltpopup .confirm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dltpopup div button:nth-of-type(1) {
+    background-color: red;
+}
+
+.dltpopup div button:nth-of-type(2) {
+    background-color: rgb(107, 106, 104);
+}
+
+.dltpopup .confirm, .d {
+    margin-bottom: 5px;
+    border-bottom: 1px rgba(101, 101, 101, 0.623) solid;
+    padding: 5px;
+}
+
+.dltpopup div .bt {
+    display: flex;
+    justify-content: end;
+    padding: 5px;
+}
+
+.dltpopup button {
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    margin-right: 5px;
+}
+.userinfo .heading .date {
+    width: 8%; /* Adjust the width as needed */
+    text-align: left;
+    font-weight: bold;
+}
+
+.userdata .date {
+    width:8%; /* Adjust the width as needed */
+    text-align: left;
+    padding: 8px; /* Adjust padding as needed */
+    /* Add border for clarity */
+}
+
+@media (max-width:700px ) {
+    body{font-size: 2vw;
+    
+}
+input, select {
+    width: 90%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    height: 30px;
+}
+
+
+.dltpopup {
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border: 1px rgba(101, 101, 101, 0.623) solid;
+    border-radius: 5px;
+    position: fixed;
+    left: 10%;
+    top: 20%;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0px 5px 10px rgba(110, 110, 110, 0.447);
+}
+
+
+}
